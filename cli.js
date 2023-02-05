@@ -61,7 +61,7 @@ if (day == 0) {
 }
 
 if (data.daily.precipitation_hours[day] == 0) {
-    console.log("You won't need your galoshes " + day_msg);
+    console.log("You probably won't need your galoshes " + day_msg);
 } else {
     console.log("You will probably need your galoshes " + day_msg);
 }
