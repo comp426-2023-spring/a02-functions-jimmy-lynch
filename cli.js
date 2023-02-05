@@ -24,7 +24,7 @@ if (args.z) {
     timezone = moment.tz.guess();
 }
 
-if (args.d) {
+if (args.d == 0 || args.d) {
     day = args.d;
 } else {
     day = 1;
@@ -61,8 +61,8 @@ if (day == 0) {
 }
 
 if (data.daily.precipitation_hours[day] == 0) {
-    console.log("You probably won't need your galoshes " + day_msg);
+    console.log("You won't need your galoshes " + day_msg);
 } else {
-    console.log("You will probably need your galoshes " + day_msg);
+    console.log("You might need your galoshes " + day_msg);
 }
 
